@@ -27,7 +27,7 @@ class Config:
             raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), self._path)
         ini.read(self._path,encoding='utf-8')
         self.m_root=ini["System"]["ROOT_FOLDER"]
-        self.m_root=ini["System"]["OUTPUT_FOLDER"]
+        self.m_out=ini["System"]["OUTPUT_FOLDER"]
         self.m_img_h=int(ini["Input"]["IMG_HEIGHT"])
         self.m_img_w=int(ini["Input"]["IMG_WIDTH"])
         self.m_img_c=int(ini["Input"]["IMG_COLOR"])

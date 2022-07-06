@@ -30,7 +30,7 @@ if __name__ == "__main__":
     roi = Rect(
         cfg.m_roi_x,
         cfg.m_roi_y,
-        cfg.m_img_w,
+        cfg.m_roi_w,
         cfg.m_roi_h
         )
     for img in imgs:

@@ -32,7 +32,8 @@ class ResPack:
         self._b = b
 
     def get_arrays(self):
-        return np.array([
+        
+        return np.array([[
             self._x,
             self._y,
             self._h,
@@ -41,4 +42,4 @@ class ResPack:
             self._l,
             self._a,
             self._b
-            ])
+            ]])
